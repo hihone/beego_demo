@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-    <form method="post" action="/api_demo/edit/{{.book.Id}}">
+    <form method="post" action="{{urlfor "MainController.Edit" ":id" .book.Id}}">
         <input type="hidden" name="_method" value="PUT" />
         <div class="form-group">
             <label for="title">Title</label>

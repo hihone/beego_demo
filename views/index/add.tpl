@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-    <form method="post" action="/api_demo/add">
+    <form method="post" action="{{urlfor "MainController.Add"}}">
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control" id="title" name="title">
